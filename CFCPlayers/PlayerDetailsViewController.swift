@@ -34,8 +34,8 @@ class PlayerDetailsViewController: UIViewController {
                 cfcExpiry.textColor = UIColor(named: "CFCRed")
             }
             let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-            dateFormatter.dateFormat = "yyyy-dd-MM"
+            dateFormatter.locale = Locale(identifier: "en_US")
+            dateFormatter.dateFormat = "yyyy-MM-dd"
             let exp = dateFormatter.date(from: player.expiry)
             if exp == nil { //No expiry field was in the JSON means LIFE MEMBER
                 cfcExpiry.text = String(localized: "No Expiry")
