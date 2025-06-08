@@ -57,7 +57,7 @@ class WebProfileViewController: UIViewController, WKNavigationDelegate {
         self.urlString = urlString
     }
     
-    func initializeProfileString(_ profileString) {
+    func initializeProfileString(_ profileString: String) {
         self.profileString = profileString
     }
 

@@ -109,8 +109,16 @@ class PlayerDetailsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ShowWebProfileView") {
+            let urlString = sender as! String
+            let profileString = if (urlString.contains("cfc")) {
+                "CFC"
+            }
+            else {
+                "FIDE"
+            }
             let webVC = segue.destination as! WebProfileViewController
-            webVC.initializeURLString(sender as! String)
+            webVC.initializeURLString(urlString)
+            webVC.initializeProfileString(profileString)
         }
     }
     
