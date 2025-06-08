@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09107AD12DF61A9D0012326A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 09107AD02DF61A9D0012326A /* .gitignore */; };
 		0940F5612A773E0100CC7756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5602A773E0100CC7756 /* AppDelegate.swift */; };
 		0940F5632A773E0100CC7756 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5622A773E0100CC7756 /* SceneDelegate.swift */; };
 		0940F5652A773E0200CC7756 /* PlayerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940F5642A773E0100CC7756 /* PlayerSearchViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09107AD02DF61A9D0012326A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0940F55D2A773E0100CC7756 /* CFCPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFCPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0940F5602A773E0100CC7756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0940F5622A773E0100CC7756 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		0940F5542A773E0100CC7756 = {
 			isa = PBXGroup;
 			children = (
+				09107AD02DF61A9D0012326A /* .gitignore */,
 				09CF26EE2B4A32C5002A0AB5 /* README.md */,
 				0940F55F2A773E0100CC7756 /* CFCPlayers */,
 				0940F55E2A773E0100CC7756 /* Products */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09CF26EF2B4A32C5002A0AB5 /* README.md in Resources */,
+				09107AD12DF61A9D0012326A /* .gitignore in Resources */,
 				0940F58A2A774FF800CC7756 /* Localizable.strings in Resources */,
 				0940F56D2A773E0600CC7756 /* LaunchScreen.storyboard in Resources */,
 				0940F5842A7749B300CC7756 /* InfoPlist.strings in Resources */,
