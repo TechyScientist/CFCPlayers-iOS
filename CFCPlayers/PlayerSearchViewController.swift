@@ -24,6 +24,16 @@ class PlayerSearchViewController: UIViewController, UITextFieldDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let navbar = self.navigationController!.navigationBar
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "CFCRed")
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navbar.scrollEdgeAppearance = appearance
+        navbar.standardAppearance = appearance
+        navbar.compactAppearance = appearance
+        
         searchField.setTitle(String(localized: "CFC ID"), forSegmentAt: 0)
         searchField.setTitle(String(localized: "Last Name"), forSegmentAt: 1)
         searchField.setTitle(String(localized: "First Name"), forSegmentAt: 2)
