@@ -17,6 +17,7 @@ class WebProfileViewController: UIViewController, WKNavigationDelegate {
     var forward = UIButton(type: UIButton.ButtonType.custom)
     var back = UIButton(type: UIButton.ButtonType.custom)
     var urlString: String?
+    var profileString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,10 @@ class WebProfileViewController: UIViewController, WKNavigationDelegate {
     
     func initializeURLString(_ urlString: String) {
         self.urlString = urlString
+    }
+    
+    func initializeProfileString(_ profileString) {
+        self.profileString = profileString
     }
 
     @objc func back(_ sender: Any?) {
