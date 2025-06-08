@@ -21,7 +21,7 @@ class WebProfileViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.title = String(localized: LocalizedStringResource(stringLiteral: "Player's " + profileString! + " Profile"))
         webView.allowsBackForwardNavigationGestures = true
         view.backgroundColor = UIColor.white
         footerView.backgroundColor = UIColor.white
