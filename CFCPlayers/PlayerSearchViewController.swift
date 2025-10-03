@@ -74,6 +74,7 @@ class PlayerSearchViewController: UIViewController, UITextFieldDelegate, UITable
     }
     
     @IBAction func execSearch() {
+        searchText.resignFirstResponder()
         searched = true
         if searchText.text == nil || searchText.text!.isEmpty {
             let controller = UIAlertController(title: String(localized: "Missing Criteria"), message: String(localized: "Please enter search criteria."), preferredStyle: .alert)
@@ -123,6 +124,12 @@ class PlayerSearchViewController: UIViewController, UITextFieldDelegate, UITable
                 }
             }).resume()
         }
+    }
+    
+    @IBAction func onSearchFieldChange(_ sender: UISegmentedControl) {
+        searchText.resignFirstResponder()
+        searchText.keyboardType = sender.selectedSegmentIndex == 0 ?
+            .numberPad : .default
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
